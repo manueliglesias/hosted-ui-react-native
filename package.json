@@ -7,6 +7,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "aws-amplify": "1.1.18-rn-hosted-ui.15",
+    "aws-amplify-react-native": "2.1.6-rn-hosted-ui.15",
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
