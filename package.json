@@ -10,8 +10,8 @@
     "log:ios": "log stream --predicate 'processImagePath ENDSWITH \"Exponent\" AND senderImageUUID == processImageUUID' |  sed 's/^.*Exponent:.//'"
   },
   "dependencies": {
-    "aws-amplify": "1.1.20-rn-hosted-ui.11",
-    "aws-amplify-react-native": "2.1.8-rn-hosted-ui.11",
+    "aws-amplify": "^1.1.23",
+    "aws-amplify-react-native": "^2.1.9",
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"

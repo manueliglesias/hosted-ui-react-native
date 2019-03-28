@@ -14,22 +14,19 @@ Amplify.configure({
     oauth: {
       // Domain name
       domain: 'manolo-hosted-ui.auth.us-east-1.amazoncognito.com',
-      // domain: 'mhvhvghj.auth.us-east-1.amazoncognito-gamma.com',
 
       // Authorized scopes
       scope: ['phone', 'email', 'profile', 'openid', 'aws.cognito.signin.user.admin'],
-      // scope: ['email', 'openid'],
 
       // Callback URL
-      redirectSignIn: Linking.makeUrl('/'),
+      redirectSignIn: 'exp://127.0.0.1:19000/--/',
 
       // Sign out URL
-      redirectSignOut: Linking.makeUrl('/'),
+      redirectSignOut: 'exp://127.0.0.1:19000/--/',
 
       // 'code' for Authorization code grant, 
       // 'token' for Implicit grant
       responseType: 'code',
-      // responseType: 'token',
 
       // optional, for Cognito hosted ui specified options
       options: {
