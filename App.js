@@ -5,7 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { default as Amplify } from "aws-amplify";
 import { withOAuth } from "aws-amplify-react-native";
-import { default as awsConfig } from "./aws-exports";
+import { default as awsConfig } from "./aws-exports2";
 
 Amplify.configure(awsConfig);
 
