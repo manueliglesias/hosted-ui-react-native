@@ -35,6 +35,12 @@ Amplify.configure({
       },
 
       urlOpener: async (url, redirectUrl) => {
+        // Workaround for https://github.com/expo/expo/issues/4524
+        if (Platform.OS === 'android' && url.match(/\/logout\?/)) {
+          await Linking.openURL(url);
+          return;
+        }
+
         const { type, url: newUrl } = await WebBrowser.openAuthSessionAsync(url, redirectUrl);
 
         if (type === 'success') {

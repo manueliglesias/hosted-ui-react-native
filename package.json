@@ -10,13 +10,15 @@
     "log:ios": "log stream --predicate 'processImagePath ENDSWITH \"Exponent\" AND senderImageUUID == processImageUUID' |  sed 's/^.*Exponent:.//'"
   },
   "dependencies": {
-    "aws-amplify": "^1.1.23",
-    "aws-amplify-react-native": "^2.1.9",
+    "aws-amplify": "1.1.32",
+    "aws-amplify-react-native": "2.1.15",
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^12.6.8",
     "babel-preset-expo": "^5.0.0",
     "react-native-yunolink": "^2.1.5"
   },
